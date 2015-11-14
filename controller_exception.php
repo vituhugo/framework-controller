@@ -1,5 +1,7 @@
 <?php namespace Framework\Controller;
 
+use Framework\Controller;
+
 abstract class ControllerException extends Controller{
 
     protected $_template;

@@ -32,7 +32,7 @@ abstract class Controller {
             $template_path = array_filter([Controller\Router::getModule('underscore')]);
             $template_path[] = Controller\Router::getController('underscore');
             $template_path[] = Controller\Router::getAction('underscore');
-            $this->setTemplate(implode(DIRECTORY_SEPARATOR, $template_path));
+            $this->setTemplate(implode(DIRECTORY_SEPARATOR, $template_path).".tpl");
         }
         return $this->_template;
     }
