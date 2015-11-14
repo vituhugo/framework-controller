@@ -4,7 +4,7 @@
   "description": "Apis3 - Plugin - Padraorespect",
   "require": {
     "php": ">=5.5",
-    "apis3/framework"
+    "apis3/framework": "x"
   },
   "autoload": {
     "classmap": [
