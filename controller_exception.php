@@ -2,8 +2,8 @@
 
 use Framework\Controller;
 
-abstract class ControllerException extends Controller{
-
+abstract class ControllerException extends Controller
+{
     /**
      * @param $exception
      *
