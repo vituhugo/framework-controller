@@ -1,15 +1,21 @@
 <?php namespace Framework\Controller;
 
+use Framework\Controller;
+
 abstract class ControllerException extends Controller{
 
-    protected $_template;
-
-    public function dispatch($e) {
-        $this->assign('exception', $e);
-        return $this->fetch('error.tpl');
+    /**
+     * @param $exception
+     *
+     * @return String A ser printada na tela.
+     */
+    public function dispatch($exception)
+    {
+        return $exception->getMessage();
     }
 
-    public function getTemplate() {
+    public function getTemplate()
+    {
         return $this->_template;
     }
 }
